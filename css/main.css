@@ -10,6 +10,17 @@ html {
 
 body {
   margin: 0;
+  padding: 0 1.5rem;
+  background-color: #f2f2f2;
+}
+
+header {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  margin: .75em 0;
 }
 
 section {
@@ -24,6 +35,7 @@ div {
 .cards {
   display: flex;
   flex-direction: column;
+  border-left: 1px solid black;
 }
 
 .card1 {
@@ -35,24 +47,32 @@ div {
   background-color: #ccc;
   text-align: center;
 }
+
 .card3 {
   background-color: #aaa;
   text-align: center;
 }
+
 .card4 {
   background-color: #999;
   text-align: center;
+  border-right: 1px solid black;
 }
 
 img {
-  width: 100px;
+  width: 100%;
   margin: 0 auto 1.5rem;
+  display: block;
+}
+
+.image {
+  width: 100px;
 }
 
 h2 {
   text-align: left;
   font-weight: bold;
-  font-size: .875rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -66,10 +86,9 @@ h3 {
 
 p {
   text-align: left;
-  font-size: .875rem;
   margin: 0 0 1.5rem;
+  flex-grow: 1;
 }
-
 
 .btn {
   padding: .4em .75em .3em;
@@ -78,13 +97,19 @@ p {
   text-align: left;
   font-size: .875rem;
   color: #fff;
-  background-color: #333;
   border-style: solid;
   border-width: 3px;
   border-color: #333;
   display: inline-block;
   width: 100%;
-
-  flex-grow: 1;
   align-self: flex-end;
+}
+
+.btn-small {
+  background-color: #333;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
 }
